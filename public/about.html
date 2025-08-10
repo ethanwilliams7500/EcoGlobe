@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 | EcoGlobe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+    <!-- 在原有meta标签后添加 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 新增优化部分 -->
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <style>
+        /* 关键CSS内联 */
+        .glass-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .page-header {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="background-blur"></div>
+
+<header class="glass-nav">
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-seedling"></i>
+            </div>
+            <h1>Eco<span>Globe</span></h1>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="knowledge.html">知识库</a></li>
+                <li><a href="action.html">行动</a></li>
+                <li><a href="about.html" class="active">关于</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="login.html" class="btn btn-primary">登录</a>
+        </div>
+
+        <div class="mobile-menu-btn">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="page-container">
+    <main class="page-transition about-page">
+        <!-- 原有about.html的main内容保持不变 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>关于<span>EcoGlobe</span></h1>
+                <p>我们的使命、愿景和背后的团队</p>
+            </div>
+        </section>
+
+        <!-- 其他原有内容保持不变 -->
+        <section class="about-mission">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-image">
+                        <img src="../images/mission.jpg" alt="环保使命">
+                    </div>
+                    <div class="mission-text">
+                        <h2>我们的使命</h2>
+                        <p>
+                            EcoGlobe致力于通过教育、倡导和实际行动，推动全球环境保护和可持续发展。我们相信每个人都能为地球的未来贡献力量。</p>
+                        <h3>愿景</h3>
+                        <p>创造一个人类与自然和谐共处的世界，让可持续发展成为每个人的生活方式。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-values">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">核心<span>价值观</span></h2>
+                    <p class="section-subtitle">指导我们工作的基本原则</p>
+                </div>
+                <div class="values-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>可持续发展</h3>
+                        <p>我们倡导满足当前需求而不损害后代满足其需求的能力</p>
+                        <a href="knowledge.html#sustainability" class="feature-link">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>全球责任</h3>
+                        <p>环境问题无国界，我们承担全球环境保护的责任</p>
+                        <a href="knowledge.html#global-responsibility" class="feature-link">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>社区参与</h3>
+                        <p>相信集体行动的力量，每个人都能带来改变</p>
+                        <a href="knowledge.html#community" class="feature-link">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-team">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">我们的<span>团队</span></h2>
+                    <p class="section-subtitle">认识背后的环保专家</p>
+                </div>
+                <div class="team-grid">
+                    <div class="feature-card">
+                        <div class="team-avatar">
+                            <img src="../images/un-logo.png" alt=" 创始人">
+                        </div>
+                        <h3>CEO</h3>
+                        <p class="team-position">创始人 & CEO</p>
+                        <p class="team-bio">
+                        </p>
+                        <div class="team-skills">
+                            <span class="skill-tag">气候变化</span>
+                            <span class="skill-tag">可持续发展</span>
+                            <span class="skill-tag">政策制定</span>
+                        </div>
+                        <a href="knowledge.html#team-zhang" class="feature-link">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">战略<span>合作伙伴</span></h2>
+                    <p class="section-subtitle">与全球领先环保组织合作</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="../images/wwf-logo.png" alt="WWF">
+                        <p>世界自然基金会</p>
+                    </div>
+                    <div class="partner-logo">
+                        <img src="../images/greenpeace-logo.png" alt="Greenpeace">
+                        <p>绿色和平</p>
+                    </div>
+                    <div class="partner-logo">
+                        <img src="../images/un-logo.png" alt="联合国环境署">
+                        <p>联合国环境署</p>
+                    </div>
+                    <div class="partner-logo">
+                        <img src="../images/ipcc-logo.png" alt="IPCC">
+                        <p>政府间气候变化专门委员会</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-join">
+            <div class="container">
+                <div class="feature-card join-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h2 class="section-title">准备好<span>加入</span>我们了吗？</h2>
+                    <p class="section-subtitle">
+                        无论你是想成为志愿者、合作伙伴，还是只是想了解更多信息，我们都欢迎你的加入。</p>
+                    <div class="join-actions">
+                        <a href="action.html" class="btn btn-primary">
+                            <span>立即参与</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="knowledge.html" class="btn btn-secondary">
+                            <span>了解更多</span>
+                            <i class="fas fa-book-open"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h1>Eco<span>Globe</span></h1>
+                    </div>
+                    <p class="footer-description">致力于通过创新和集体行动创造可持续的未来。</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/ecoglobe" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/ecoglobe" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/ecoglobe" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/ecoglobe" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-group">
+                        <h3>组织</h3>
+                        <ul>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="about.html#team">我们的团队</a></li>
+                            <li><a href="about.html#careers">职业发展</a></li>
+                            <li><a href="about.html#partners">合作伙伴</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group">
+                        <h3>资源</h3>
+                        <ul>
+                            <li><a href="knowledge.html">博客</a></li>
+                            <li><a href="knowledge.html">研究报告</a></li>
+                            <li><a href="knowledge.html">指南</a></li>
+                            <li><a href="knowledge.html">常见问题</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group">
+                        <h3>法律</h3>
+                        <ul>
+                            <li><a href="privacy.html">隐私政策</a></li>
+                            <li><a href="terms.html">服务条款</a></li>
+                            <li><a href="cookies.html">Cookie政策</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 EcoGlobe. 版权所有。</p>
+                <p class="team-info">计算机网络系 | 24609班 | 团队成员: 黎梓豪</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+
+</html>

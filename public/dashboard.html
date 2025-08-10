@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | EcoGlobe</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -163,7 +163,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script>
         // 处理退出登录
         document.getElementById('logoutLink').addEventListener('click', function(e) {
@@ -171,18 +171,18 @@
             localStorage.removeItem('ecoUsername');
             window.location.href = 'login.html';
         });
-        
+
         // 初始化仪表盘数据
         document.addEventListener('DOMContentLoaded', function() {
             // 从本地存储获取用户名或使用默认值
             const username = localStorage.getItem('ecoUsername') || '环保用户';
             document.getElementById('username-display').textContent = username;
-            
+
             // 模拟从API获取数据
             setTimeout(() => {
                 document.getElementById('carbon-saved').textContent = '128';
                 document.getElementById('recycled-items').textContent = '156';
-                
+
                 // 更新进度环
                 const progressValue = 75;
                 const circle = document.querySelector('.progress-ring-circle');
@@ -190,7 +190,7 @@
                 const offset = circumference - (progressValue / 100) * circumference;
                 circle.style.strokeDashoffset = offset;
             }, 500);
-            
+
             // 徽章悬停提示
             const badgeItems = document.querySelectorAll('.badge-item');
             badgeItems.forEach(item => {
