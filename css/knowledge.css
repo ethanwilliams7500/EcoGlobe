@@ -1,0 +1,499 @@
+/* Knowledge Page Styles */
+.page-container {
+    padding-top: 120px;
+    color: var(--text-light);
+}
+
+.page-hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-hero h2 span {
+    color: var(--primary-color);
+}
+
+.page-hero p {
+    font-size: 18px;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-content {
+    padding: 60px 0;
+}
+
+.content-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: var(--transition);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tab-btn.active {
+    opacity: 1;
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+.tab-btn:hover:not(.active) {
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tabs-content {
+    min-height: 500px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pane-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.pane-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.pane-header p {
+    opacity: 0.8;
+}
+
+.pane-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .pane-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pane-grid {
+        gap: 20px;
+    }
+}
+
+.feature-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: rgba(26, 26, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.feature-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.card-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+    opacity: 0.3;
+}
+
+.card-content p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.card-link:hover {
+    opacity: 0.8;
+}
+
+.card-link i {
+    transition: var(--transition);
+}
+
+.card-link:hover i {
+    transform: translateX(5px);
+}
+
+.knowledge-sidebar {
+    margin-top: 60px;
+}
+
+.sidebar-card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: rgba(26, 26, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.sidebar-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.facts-list {
+    list-style: none;
+}
+
+.facts-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.facts-list li:last-child {
+    border-bottom: none;
+}
+
+.facts-list i {
+    width: 30px;
+    height: 30px;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.sources-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.source-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.source-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.source-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+    .main-content .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    .content-tabs {
+        flex: 2;
+    }
+
+    .knowledge-sidebar {
+        flex: 1;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 0;
+    }
+
+    .page-header h1 {
+        font-size: 36px;
+    }
+
+    .tabs-header {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .tab-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* 新增数据可视化样式 */
+.plastic-pollution-chart {
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.plastic-waste-bar {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #ff7675, #d63031);
+    border-radius: 10px;
+}
+
+.plastic-waste-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+.air-quality-map {
+    position: relative;
+    height: 80px;
+    background: rgba(26, 26, 46, 0.5);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.air-quality-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fdcb6e;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.water-pollution-stats {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(0, 184, 148, 0.1);
+    border-radius: 8px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.data-visual {
+    margin: 15px 0;
+}
+
+.data-label {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.data-points {
+    margin: 15px 0;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.data-item i {
+    color: var(--primary-color);
+}
+
+.source-info {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+/* PDF下载按钮样式 */
+.btn-pdf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-pdf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+.btn-pdf:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-pdf:hover::before {
+    left: 100%;
+}
+
+.btn-pdf i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-pdf:hover i {
+    transform: translateY(-2px);
+}
+
+.cta-section .btn-pdf {
+    margin-top: 20px;
+}

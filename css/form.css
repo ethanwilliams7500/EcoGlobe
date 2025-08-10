@@ -1,0 +1,128 @@
+/* 登录表单样式 */
+.login-section {
+    padding: 60px 0;
+    background: 
+        url('../images/bg.jpg') no-repeat center/cover,
+        rgba(255,255,255,0.1);
+    position: relative;
+}
+
+.login-container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 50%;
+}
+
+.login-icon i {
+    font-size: 36px;
+    color: #2ecc71;
+}
+
+.form-group.with-icon {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group.with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+.form-group.with-icon input {
+    padding-left: 45px;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ecf0f1;
+    background: rgba(255,255,255,0.9);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group.with-icon input:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+.btn-primary i {
+    margin-right: 8px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: #7f8c8d;
+}
+
+.forgot-password {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+.register-link a {
+    color: #3498db;
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+}

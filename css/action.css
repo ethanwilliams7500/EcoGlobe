@@ -1,0 +1,140 @@
+/* 行动页面专用样式 */
+
+.action-hero {
+    background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), 
+                url('../images/action-bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.action-categories {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.category-card {
+    background: rgba(26, 26, 46, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    color: #1a8cff;
+    margin-bottom: 20px;
+}
+
+.category-card h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.upcoming-events {
+    padding: 80px 0;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event-date {
+    background: #1a8cff;
+    color: white;
+    padding: 20px;
+    min-width: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.event-details {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.event-location {
+    color: #666;
+    margin: 10px 0;
+}
+
+.event-description {
+    margin: 15px 0;
+}
+
+.volunteer-section {
+    background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9));
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.volunteer-content h2 {
+    margin-bottom: 20px;
+}
+
+.volunteer-content p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .action-hero {
+        min-height: 50vh;
+    }
+}

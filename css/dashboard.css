@@ -1,0 +1,244 @@
+/* 仪表盘布局样式 */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* 卡片通用样式 */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 用户信息卡片 */
+.profile-card {
+    text-align: center;
+}
+
+.profile-header .avatar {
+    font-size: 80px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.profile-header h2 {
+    margin: 10px 0 5px;
+    color: white;
+}
+
+.member-since {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 24px;
+    color: #4CAF50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 统计卡片 */
+.stats-card h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.progress-ring-circle {
+    stroke: #4CAF50;
+    stroke-dasharray: 326.56;
+    stroke-dashoffset: calc(326.56 - (326.56 * 75) / 100);
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.progress-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.stat-details {
+    flex: 1;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.detail-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 项目卡片 */
+.projects-card h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.project-list {
+    margin-bottom: 20px;
+}
+
+.project-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-item h3 {
+    margin: 0 0 5px;
+    color: white;
+}
+
+.project-item p {
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.project-progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #4CAF50;
+    border-radius: 3px;
+    flex: 1;
+}
+
+/* 徽章卡片 */
+.badges-card h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.badges-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.badge-item {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    position: relative;
+}
+
+.badge-item i {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.badge-item.gold i {
+    color: gold;
+}
+
+.badge-item.silver i {
+    color: silver;
+}
+
+.badge-item.locked i {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.badge-item span {
+    font-size: 14px;
+    color: white;
+}
+
+.badge-item[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.badges-progress {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .badges-container {
+        grid-template-columns: 1fr;
+    }
+}

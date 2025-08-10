@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环境知识 | EcoGlobe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/knowledge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/knowledge.css" as="style">
+</head>
+
+<body>
+    <div class="background-blur"></div>
+
+    <div class="page-container">
+        <header class="glass-nav">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h1>Eco<span>Globe</span></h1>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="knowledge.html" class="active">知识库</a></li>
+                        <li><a href="action.html">行动</a></li>
+                        <li><a href="about.html">关于</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <a href="login.html" class="btn btn-primary">登录</a>
+                </div>
+
+                <div class="mobile-menu-btn">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page-transition">
+        <section class="page-hero">
+            <div class="container">
+                <h2 class="hero-title">环境<span>知识</span></h2>
+                <p class="hero-subtitle">了解环境问题和解决方案</p>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="container">
+                <div class="content-tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="climate">气候变化</button>
+                        <button class="tab-btn" data-tab="biodiversity">生物多样性</button>
+                        <button class="tab-btn" data-tab="pollution">环境污染</button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <div class="tab-pane active" id="climate">
+                            <div class="pane-header">
+                                <h2>气候变化的现实</h2>
+                                <p>关于我们变化中星球的科学事实</p>
+                            </div>
+
+                            <div class="pane-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-temperature-high"></i>
+                                    </div>
+                                    <h3>全球气温上升</h3>
+                                    <div class="data-visual">
+                                        <div class="temp-rise-chart">
+                                            <span class="temp-rise-bar" style="width: 118%"></span>
+                                        </div>
+                                        <div class="data-label">+1.18°C (1880-2023)</div>
+                                    </div>
+                                    <p>自19世纪末以来，由于二氧化碳排放增加，地球平均表面温度上升了约1.18°C。2023年成为有记录以来最热的一年，全球平均气温比工业化前水平高出1.45°C。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-industry"></i>
+                                            <span>CO₂浓度: 419ppm (比工业革命前高50%)</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-fire"></i>
+                                            <span>热浪频率: 增加5倍</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: NASA, NOAA, IPCC AR6</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看完整报告</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <h3>碳足迹追踪</h3>
+                                    <div class="data-visual">
+                                        <div class="carbon-footprint-chart">
+                                            <div class="footprint-sector" style="width: 25%">交通</div>
+                                            <div class="footprint-sector" style="width: 20%">食物</div>
+                                            <div class="footprint-sector" style="width: 15%">住房</div>
+                                            <div class="footprint-sector" style="width: 40%">商品</div>
+                                        </div>
+                                    </div>
+                                    <p>全球人均碳足迹为4.8吨/年，远高于可持续的2吨目标。发达国家平均碳足迹是发展中国家的3-5倍。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-car"></i>
+                                            <span>交通排放占比: 25%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-utensils"></i>
+                                            <span>食物系统排放: 20%</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: Global Carbon Project</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>计算你的碳足迹</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <h3>极端天气事件</h3>
+                                    <div class="data-visual">
+                                        <div class="event-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-value">40%</span>
+                                                <span class="stat-label">事件增加</span>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="stat-value">2.5x</span>
+                                                <span class="stat-label">经济损失</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>过去20年中，极端天气事件的频率和强度增加了约40%。2020-2023年间，全球因极端天气造成的经济损失达2.5万亿美元，是1990年代的2.5倍。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-tornado"></i>
+                                            <span>飓风强度: 增加8%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-umbrella"></i>
+                                            <span>暴雨事件: 增加30%</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: WMO, Munich Re</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看灾害地图</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-water"></i>
+                                    </div>
+                                    <h3>海平面上升</h3>
+                                    <div class="data-visual">
+                                        <div class="sea-level-chart">
+                                            <div class="sea-level-marker" style="bottom: 20%">+20cm</div>
+                                        </div>
+                                        <div class="data-label">1900-2023年上升</div>
+                                    </div>
+                                    <p>上个世纪全球海平面上升了约20厘米，由于冰融化和热膨胀，现在每年上升3.2毫米。格陵兰冰盖每年损失约2600亿吨冰，南极洲每年损失约1500亿吨冰。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-mountain"></i>
+                                            <span>冰川退缩: 每年2670亿吨</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-home"></i>
+                                            <span>风险人口: 6.3亿人</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: IPCC, NASA Sea Level Change</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看预测模型</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="biodiversity">
+                            <div class="pane-header">
+                                <h2>生物多样性危机</h2>
+                                <p>我们身边正在发生的无声灭绝</p>
+                            </div>
+
+                            <div class="pane-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-tree"></i>
+                                    </div>
+                                    <h3>栖息地丧失</h3>
+                                    <div class="data-visual">
+                                        <div class="species-loss-chart">
+                                            <span class="species-loss-value">1M</span>
+                                            <span class="species-loss-label">濒危物种</span>
+                                        </div>
+                                    </div>
+                                    <p>由于人类活动，多达100万种物种面临灭绝，栖息地破坏是主要原因。自1970年以来，全球野生动物种群数量平均下降了69%。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-forest"></i>
+                                            <span>森林损失: 每年1000万公顷</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-paw"></i>
+                                            <span>脊椎动物: 68%种群减少</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: WWF Living Planet Report 2022</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看濒危物种地图</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <h3>昆虫种群崩溃</h3>
+                                    <div class="data-visual">
+                                        <div class="insect-decline-chart">
+                                            <div class="insect-decline-bar" style="height: 75%"></div>
+                                            <div class="insect-decline-label">75%</div>
+                                        </div>
+                                        <div class="data-label">过去30年减少</div>
+                                    </div>
+                                    <p>全球昆虫种群数量在30年内减少了75%，其中传粉昆虫受影响最严重。40%的昆虫物种面临灭绝风险，威胁全球粮食安全。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-bee"></i>
+                                            <span>蜜蜂数量下降: 90%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-apple-alt"></i>
+                                            <span>依赖传粉作物: 75%</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: Biological Conservation</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>了解保护措施</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-water"></i>
+                                    </div>
+                                    <h3>珊瑚礁衰退</h3>
+                                    <div class="data-visual">
+                                        <div class="coral-loss-chart">
+                                            <div class="coral-loss-bar" style="height: 50%"></div>
+                                            <div class="coral-loss-label">50%</div>
+                                        </div>
+                                        <div class="data-label">珊瑚礁已死亡</div>
+                                    </div>
+                                    <p>过去30年全球50%的珊瑚礁已经死亡，如果当前趋势持续，预计到2050年将有90%死亡。珊瑚白化事件频率增加了5倍，从1980年代每25-30年一次增加到现在的每6年一次。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-thermometer-three-quarters"></i>
+                                            <span>海洋酸化: pH值下降0.1</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-fish"></i>
+                                            <span>依赖珊瑚礁物种: 25%海洋生物</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: Global Coral Reef Monitoring Network</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看珊瑚礁监测</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                    <h3>亚马逊雨林砍伐</h3>
+                                    <div class="data-visual">
+                                        <div class="amazon-loss-map">
+                                            <div class="amazon-loss-area" style="width: 17%"></div>
+                                        </div>
+                                        <div class="data-label">17%面积消失</div>
+                                    </div>
+                                    <p>过去50年17%的亚马逊雨林已经消失，威胁着无数物种和土著社区。2022年砍伐速度达到15年最高点，每分钟损失3个足球场面积的森林。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-fire"></i>
+                                            <span>2022年火灾: 7.5万起</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-users"></i>
+                                            <span>受影响土著: 400个社区</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: INPE, RAISG</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看实时砍伐数据</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="pollution">
+                            <div class="pane-header">
+                                <h2>环境污染问题</h2>
+                                <p>人类废弃物如何毒害我们的星球</p>
+                            </div>
+
+                            <div class="pane-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                    <h3>塑料污染</h3>
+                                    <div class="data-visual">
+                                        <div class="plastic-pollution-chart">
+                                            <div class="plastic-waste-bar" style="height: 91%"></div>
+                                            <div class="plastic-waste-label">91%</div>
+                                        </div>
+                                        <div class="data-label">塑料未被回收</div>
+                                    </div>
+                                    <p>每年有800万吨塑料进入海洋，相当于每分钟倾倒一卡车塑料。到2050年，海洋中的塑料可能比鱼类还多。全球每分钟消耗100万个塑料瓶。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-fish"></i>
+                                            <span>受影响的海洋物种: 700+</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-microscope"></i>
+                                            <span>微塑料: 每人每周摄入5克</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: UNEP, Science Advances</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看塑料污染追踪</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-smog"></i>
+                                    </div>
+                                    <h3>空气质量危机</h3>
+                                    <div class="data-visual">
+                                        <div class="air-quality-map">
+                                            <div class="air-quality-dot" style="left: 20%"></div>
+                                            <div class="air-quality-dot" style="left: 50%"></div>
+                                            <div class="air-quality-dot" style="left: 80%"></div>
+                                        </div>
+                                        <div class="data-label">全球污染热点</div>
+                                    </div>
+                                    <p>全球91%的人口生活在空气质量超过WHO限制的地区，每年导致700万人过早死亡。空气污染导致全球GDP损失5.7万亿美元，相当于全球经济产出的4.8%。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-lungs"></i>
+                                            <span>儿童受影响: 93%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-car"></i>
+                                            <span>交通污染占比: 25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: WHO, State of Global Air</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看实时空气质量</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-tint"></i>
+                                    </div>
+                                    <h3>水污染</h3>
+                                    <div class="data-visual">
+                                        <div class="water-pollution-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-value">2B</span>
+                                                <span class="stat-label">受影响人口</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>全球有20亿人饮用被粪便污染的水，每年导致485,000例腹泻死亡。80%的废水未经处理直接排放，农业径流导致全球400个"死亡区"海洋区域。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-toilet"></i>
+                                            <span>缺乏卫生设施: 24亿人</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-flask"></i>
+                                            <span>水中污染物: 1000+种</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: WHO, UNESCO WWAP</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查看水质监测</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-radiation"></i>
+                                    </div>
+                                    <h3>电子废弃物危机</h3>
+                                    <div class="data-visual">
+                                        <div class="e-waste-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-value">53.6M</span>
+                                                <span class="stat-label">吨/年</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>全球每年产生5360万吨电子废弃物，只有17.4%被回收。到2030年，电子废弃物预计将达到7470万吨，含有价值625亿美元的原材料。</p>
+                                    <div class="data-points">
+                                        <div class="data-item">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <span>智能手机: 15亿部/年</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <i class="fas fa-battery-three-quarters"></i>
+                                            <span>有害物质: 1000+种</span>
+                                        </div>
+                                    </div>
+                                    <div class="source-info">
+                                        <span>数据来源: Global E-waste Monitor</span>
+                                    </div>
+                                    <a href="#" class="feature-link">
+                                        <span>查找回收点</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="knowledge-sidebar">
+                    <div class="sidebar-card">
+                        <h3>快速事实</h3>
+                        <ul class="facts-list">
+                            <li>
+                                <i class="fas fa-fire"></i>
+                                <span>2023年是有记录以来最热的一年</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-trash"></i>
+                                <span>只有9%的塑料被回收</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-tint"></i>
+                                <span>到2025年有18亿人面临水资源短缺</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-tree"></i>
+                                <span>我们每年损失1000万公顷森林</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>研究来源</h3>
+                        <div class="sources-list">
+                            <a href="#" class="source-item">
+                                <img src="images/un-logo.png" alt="UNEP">
+                                <span>联合国环境规划署</span>
+                            </a>
+                            <a href="#" class="source-item">
+                                <img src="images/ipcc-logo.png" alt="IPCC">
+                                <span>政府间气候变化专门委员会报告</span>
+                            </a>
+                            <a href="#" class="source-item">
+                                <img src="images/wwf-logo.png" alt="WWF">
+                                <span>世界自然基金会研究</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>想要<span>了解更多</span>？</h2>
+                    <p>下载我们的环境科学综合指南</p>
+                </div>
+                <div class="cta-action">
+                    <a href="#" class="btn-pdf" id="downloadPdf">
+                        <i class="fas fa-file-pdf"></i>
+                        下载PDF指南
+                    </a>
+                    <p class="form-note">免费48页图文指南</p>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h1>Eco<span>Globe</span></h1>
+                    </div>
+                    <p class="footer-description">致力于通过创新和集体行动创造可持续的未来</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-group">
+                        <h3>组织</h3>
+                        <ul>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="about.html#team">我们的团队</a></li>
+                            <li><a href="about.html#careers">职业发展</a></li>
+                            <li><a href="about.html#partners">合作伙伴</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group">
+                        <h3>资源</h3>
+                        <ul>
+                            <li><a href="knowledge.html">博客</a></li>
+                            <li><a href="knowledge.html">研究报告</a></li>
+                            <li><a href="knowledge.html">指南</a></li>
+                            <li><a href="knowledge.html">常见问题</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-group">
+                        <h3>法律</h3>
+                        <ul>
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">服务条款</a></li>
+                            <li><a href="#">Cookie政策</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                                <p class="copyright">&copy; 2025 EcoGlobe. 版权所有。</p>
+                <p class="team-info">计算机网络系 | 24609班 | 团队成员: 黎梓豪</p>
+            </div>
+        </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/knowledge.js"></script>
+</body>
+
+</html>

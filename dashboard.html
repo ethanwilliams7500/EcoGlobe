@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | EcoGlobe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+
+    <header class="glass-nav">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h1>Eco<span>Globe</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="knowledge.html">知识库</a></li>
+                    <li><a href="action.html">行动</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="login.html" id="logoutLink">退出</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main class="page-transition">
+            <section class="page-header">
+                <div class="container">
+                    <h1>用户<span>仪表盘</span></h1>
+                    <p>欢迎回到您的环保账户</p>
+                </div>
+            </section>
+
+            <section class="dashboard-section">
+                <div class="container">
+                    <div class="dashboard-grid">
+                        <!-- 用户信息卡片 -->
+                        <div class="glass-card profile-card">
+                            <div class="profile-header">
+                                <div class="avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <h2 id="username-display">用户名</h2>
+                                <p class="member-since">会员自: 2025年4月</p>
+                            </div>
+                            <div class="profile-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span class="stat-value" id="carbon-saved">0</span>
+                                    <span class="stat-label">kg 碳减排</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-recycle"></i>
+                                    <span class="stat-value" id="recycled-items">0</span>
+                                    <span class="stat-label">件回收物品</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 活动统计卡片 -->
+                        <div class="glass-card stats-card">
+                            <h2><i class="fas fa-chart-line"></i> 环保活动统计</h2>
+                            <div class="stats-container">
+                                <div class="stat-circle">
+                                    <div class="circle-progress" data-value="75">
+                                        <svg class="progress-ring" width="120" height="120">
+                                            <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                        </svg>
+                                        <span class="progress-value">75%</span>
+                                    </div>
+                                    <p>月度目标完成度</p>
+                                </div>
+                                <div class="stat-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">参与活动</span>
+                                        <span class="detail-value">12次</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">志愿者小时</span>
+                                        <span class="detail-value">36小时</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">影响人数</span>
+                                        <span class="detail-value">245人</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 最近项目卡片 -->
+                        <div class="glass-card projects-card">
+                            <h2><i class="fas fa-project-diagram"></i> 最近参与的项目</h2>
+                            <div class="project-list">
+                                <div class="project-item">
+                                    <h3>社区植树活动</h3>
+                                    <p>2025年4月15日</p>
+                                    <div class="project-progress">
+                                        <div class="progress-bar" style="width: 100%"></div>
+                                        <span>已完成</span>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <h3>海滩清洁</h3>
+                                    <p>2025年4月22日(地球日)</p>
+                                    <div class="project-progress">
+                                        <div class="progress-bar" style="width: 100%"></div>
+                                        <span>已完成</span>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <h3>环保教育讲座</h3>
+                                    <p>进行中 - 2025年5月10日</p>
+                                    <div class="project-progress">
+                                        <div class="progress-bar" style="width: 65%"></div>
+                                        <span>65% 完成</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="action.html" class="btn btn-outline">查看所有项目</a>
+                        </div>
+
+                        <!-- 成就徽章卡片 -->
+                        <div class="glass-card badges-card">
+                            <h2><i class="fas fa-award"></i> 环保成就</h2>
+                            <div class="badges-container">
+                                <div class="badge-item" data-tooltip="参与5次环保活动">
+                                    <i class="fas fa-medal gold"></i>
+                                    <span>环保先锋</span>
+                                </div>
+                                <div class="badge-item" data-tooltip="回收100件物品">
+                                    <i class="fas fa-recycle silver"></i>
+                                    <span>回收达人</span>
+                                </div>
+                                <div class="badge-item locked" data-tooltip="需要参与10次活动">
+                                    <i class="fas fa-lock"></i>
+                                    <span>地球卫士</span>
+                                </div>
+                                <div class="badge-item locked" data-tooltip="需要影响500人">
+                                    <i class="fas fa-lock"></i>
+                                    <span>环保大使</span>
+                                </div>
+                            </div>
+                            <p class="badges-progress">已获得2/8个徽章</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EcoGlobe 环保组织. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 处理退出登录
+        document.getElementById('logoutLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            localStorage.removeItem('ecoUsername');
+            window.location.href = 'login.html';
+        });
+        
+        // 初始化仪表盘数据
+        document.addEventListener('DOMContentLoaded', function() {
+            // 从本地存储获取用户名或使用默认值
+            const username = localStorage.getItem('ecoUsername') || '环保用户';
+            document.getElementById('username-display').textContent = username;
+            
+            // 模拟从API获取数据
+            setTimeout(() => {
+                document.getElementById('carbon-saved').textContent = '128';
+                document.getElementById('recycled-items').textContent = '156';
+                
+                // 更新进度环
+                const progressValue = 75;
+                const circle = document.querySelector('.progress-ring-circle');
+                const circumference = 2 * Math.PI * 52;
+                const offset = circumference - (progressValue / 100) * circumference;
+                circle.style.strokeDashoffset = offset;
+            }, 500);
+            
+            // 徽章悬停提示
+            const badgeItems = document.querySelectorAll('.badge-item');
+            badgeItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    if(this.classList.contains('locked')) {
+                        this.setAttribute('data-tooltip', '完成更多环保活动解锁此徽章');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
